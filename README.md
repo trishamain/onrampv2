@@ -195,7 +195,7 @@ The system expects a JSON file with the following structure:
 - **API key name**: the non-Colab fallback reads `MISTRAL_API_KEY`, the same name used in Colab secrets, instead of a second unrelated variable
 - **Per-turn context**: `generate()` uses only the `ToolMessage` objects added after the latest human message, so retrieved context does not accumulate across turns
 - **Guaranteed return**: `process_message()` initialises `response` before the loop, so a turn with no AI message returns a readable message instead of raising
-- **Follow-up retrieval**: a follow-up question shorter than eight words borrows the previous question as its retrieval query, so short questions still match something
+- **Follow-up retrieval**: a follow-up question of eight words or fewer borrows the previous question as its retrieval query, so short questions still match something
 - **Example questions**: the Gradio interface adds a `gr.Examples` row of four click-to-fill questions
 - **Gradio 6**: `gr.Chatbot` is constructed without the `type` argument, which Gradio 6 removed; the messages format is now the default
 
