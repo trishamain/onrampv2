@@ -1,0 +1,409 @@
+{
+  "knowledge_base": [
+    {
+      "category": "PLATFORM OVERVIEW",
+      "questions": [
+        {
+          "question": "What is IBM watsonx.ai?",
+          "answer": "watsonx.ai is IBM's studio for building and running AI. It brings predictive machine learning, prescriptive decision optimization and generative AI into one place. Teams can pick the models, frameworks and infrastructure that suit each workload.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai"
+        },
+        {
+          "question": "What kinds of AI can I build with it?",
+          "answer": "You can build machine learning models for tasks like forecasting, classification, risk scoring and analytics. You can also use Decision Optimization for planning and scheduling problems, and generative AI for things like retrieval augmented generation. The platform is designed so these can be combined for a single business decision.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai"
+        },
+        {
+          "question": "What is Decision Optimization?",
+          "answer": "Decision Optimization is the prescriptive part of watsonx.ai. It helps you find better answers to planning, scheduling, supply chain and resource allocation problems while respecting real business constraints. It sits alongside the machine learning and generative AI tools rather than replacing them.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai"
+        },
+        {
+          "question": "We already run machine learning models. Do we need a separate stack for generative AI?",
+          "answer": "No. IBM positions watsonx.ai as a way to add generative AI on top of existing machine learning and optimization work. The intent is that you extend what you have instead of starting a separate AI strategy or technology stack.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai"
+        },
+        {
+          "question": "am I locked into one vendor?",
+          "answer": "IBM says the platform is built to avoid that. You can choose the models, frameworks and hybrid infrastructure that fit each workload rather than committing to a single provider or ecosystem. The model library itself mixes IBM, open source and third party models.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai"
+        },
+        {
+          "question": "What are some typical use cases?",
+          "answer": "Common uses include predicting outcomes such as demand, risk, anomalies or equipment failure, and optimizing operational decisions. Others include enterprise search and RAG over company knowledge, adapting models to industry terminology, and serving models to many applications through shared APIs.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai"
+        },
+        {
+          "question": "Does watsonx.ai cover the full AI lifecycle or just building models?",
+          "answer": "It covers the full lifecycle: development, deployment, monitoring and retraining. Teams can work with open source tools, low code tools or pro code tools, depending on their skills. The goal is to move from experiments to repeatable production use.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai"
+        },
+        {
+          "question": "How does watsonx.ai work with watsonx Orchestrate?",
+          "answer": "Models and AI services built in watsonx.ai can serve as building blocks for agentic applications. When a workflow needs agents coordinated across the enterprise, you connect those services to watsonx Orchestrate, which handles the multi agent orchestration.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai"
+        },
+        {
+          "question": "How does watsonx.ai relate to watsonx.data?",
+          "answer": "For enterprise search and RAG, IBM pairs the two. watsonx.data retrieves governed business context, and watsonx.ai uses that context to produce accurate, context aware answers.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai"
+        }
+      ]
+    },
+    {
+      "category": "FOUNDATION MODELS",
+      "questions": [
+        {
+          "question": "Which foundation models are available in watsonx.ai?",
+          "answer": "The library includes IBM's own Granite models, open source models and third party models. Third party providers include Meta, Mistral AI, OpenAI's open weight gpt-oss models, DeepSeek, NVIDIA and several others. You pick the model that fits your use case, budget, region and risk profile.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/foundation-models"
+        },
+        {
+          "question": "can I use llama?",
+          "answer": "Yes. Meta's Llama family is in the library, including Llama 4 variants and several Llama 3 generation models, some with vision support. Availability differs by model, so check the library listing for how each one can be consumed.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/foundation-models"
+        },
+        {
+          "question": "Are Mistral models available?",
+          "answer": "Yes. The library lists a range of Mistral AI models, including large, medium, small and code focused variants. IBM describes them as open weight models suited to text generation, reasoning and multilingual work.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/foundation-models"
+        },
+        {
+          "question": "How do I know whether a model is billed per token or has to be deployed?",
+          "answer": "Each model in the library is labeled with how it can be consumed. Some are pay as you go, some are deploy on demand only, and some support both. Pay as you go means shared inference billed by usage, while deploy on demand means you host a dedicated instance of the model.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/foundation-models"
+        },
+        {
+          "question": "Does watsonx.ai include embedding models?",
+          "answer": "Yes. IBM offers its Granite multilingual embedding model and two Slate retriever models for English. Third party options include all-MiniLM-L6-v2 and multilingual-e5-large. The embedding models are listed as pay as you go.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/foundation-models"
+        },
+        {
+          "question": "Is every model available in every region?",
+          "answer": "No. Model availability varies by region, and IBM points to its documentation for the details. Check the regional list before designing around a specific model.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/foundation-models"
+        },
+        {
+          "question": "Is the context window the same as what the model provider advertises?",
+          "answer": "Not necessarily. IBM notes that the context length a provider supports may be limited on the platform itself. Context length is measured in tokens, and the documentation has the actual limits.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/foundation-models"
+        },
+        {
+          "question": "Does IBM offer IP indemnification for its models?",
+          "answer": "Yes, for IBM developed models. IBM extends its standard contractual intellectual property indemnification to them, similar to its hardware and software products. It does not ask customers to indemnify IBM for using these models, and it does not cap that liability.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/foundation-models"
+        },
+        {
+          "question": "Does that indemnification cover third party models like Llama or Mistral?",
+          "answer": "The protection is described only for IBM developed models. The models named as covered are the Slate encoder models and the Granite decoder models. Third party models are not listed.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/foundation-models"
+        },
+        {
+          "question": "How does IBM prepare training data for its own models?",
+          "answer": "Before training, IBM removes duplicate data and applies URL blocklists, filters for objectionable content and document quality, and tokenization steps. During training it uses supervised fine tuning so the models follow instructions well. IBM says these processes are expected to keep evolving.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/foundation-models"
+        },
+        {
+          "question": "What is IBM Granite?",
+          "answer": "Granite is IBM's family of open AI models built for business use. It spans language, speech, vision, guardrail, embedding and time series models. They are designed to be small and efficient, and you can customize and deploy them.",
+          "source_url": "https://www.ibm.com/granite"
+        },
+        {
+          "question": "is granite open source?",
+          "answer": "Yes. Granite models are released under the Apache 2.0 license and can be downloaded from Hugging Face. IBM presents this openness as giving you transparency and freedom to customize and deploy them on any infrastructure.",
+          "source_url": "https://www.ibm.com/granite"
+        },
+        {
+          "question": "What is Granite Guardian?",
+          "answer": "Granite Guardian is the guardrail part of the Granite family. These models detect malicious prompts and harmful model outputs, and IBM positions them for enterprise compliance needs.",
+          "source_url": "https://www.ibm.com/granite"
+        },
+        {
+          "question": "Are Granite models signed or certified in any way?",
+          "answer": "IBM says released Granite language, vision, speech, embedding and guardian models are being cryptographically signed as of April 2026. Separately, the AI management system behind the Granite language models holds an ISO certification.",
+          "source_url": "https://www.ibm.com/granite"
+        },
+        {
+          "question": "Is there a Granite model for forecasting?",
+          "answer": "Yes. Granite Time Series models are compact forecasting models, ranging from very small multivariate models to ones that handle different timescales. IBM says they are light enough to run on a laptop.",
+          "source_url": "https://www.ibm.com/granite"
+        }
+      ]
+    },
+    {
+      "category": "RAG DEVELOPMENT",
+      "questions": [
+        {
+          "question": "Can I build RAG applications on watsonx.ai?",
+          "answer": "Yes. You can use foundation models to build, tune and deploy retrieval augmented generation pipelines on top of your own enterprise knowledge base. The platform provides both no code and automated options for this.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/rag-development"
+        },
+        {
+          "question": "Why use RAG instead of just picking a bigger model?",
+          "answer": "Grounding a model in your own knowledge base helps improve the quality of its answers. It also lets you run inference on a smaller, specialized model rather than a large general one, which helps control cost.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/rag-development"
+        },
+        {
+          "question": "What is Prompt Lab?",
+          "answer": "Prompt Lab is the watsonx.ai workspace for working directly with foundation models. It is where the chat with documents feature lives, so you can ground a model in your own files and test the results.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/rag-development"
+        },
+        {
+          "question": "Do I need to code to use it?",
+          "answer": "No. Prompt Lab is a no code tool, so you can upload and configure documents without writing any code. Developers can add code based options later when they need to scale.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/rag-development"
+        },
+        {
+          "question": "What is chat with documents?",
+          "answer": "Chat with documents lets you build a RAG solution grounded in your own files, either for quick prototyping or for deployment. You upload files such as PDFs and Word documents in Prompt Lab and configure them there.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/rag-development"
+        },
+        {
+          "question": "which vector databases work with it?",
+          "answer": "The page names Milvus and Elasticsearch as vector stores developers can use to scale beyond a prototype. Using a vector store is described as a way to improve grounding accuracy.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/rag-development"
+        },
+        {
+          "question": "Can I deploy my RAG solution as an API?",
+          "answer": "Yes. A document grounded solution can be deployed as an API. That API can then power AI assistants or agents.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/rag-development"
+        },
+        {
+          "question": "What is AutoAI for RAG?",
+          "answer": "AutoAI for RAG automates pipeline design. It generates many possible RAG pipeline configurations, evaluates each one, and ranks them on a leaderboard so you can pick the best performer.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/rag-development"
+        },
+        {
+          "question": "Why would I use AutoAI instead of tuning the pipeline by hand?",
+          "answer": "Testing RAG settings manually can mean trying hundreds of combinations over a long period. AutoAI runs that comparison for you and surfaces the strongest options, which shortens the process considerably.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/rag-development"
+        },
+        {
+          "question": "Are there sample RAG projects I can start from?",
+          "answer": "Yes. The Granite cookbook includes a notebook for building a RAG pipeline with Granite and LangChain. There is also a multimodal RAG recipe that uses Granite with Docling to query text, tables and images.",
+          "source_url": "https://www.ibm.com/granite"
+        }
+      ]
+    },
+    {
+      "category": "MODEL CUSTOMIZATION & TUNING",
+      "questions": [
+        {
+          "question": "What ways can I customize a model in watsonx.ai?",
+          "answer": "The platform supports six approaches: prompt engineering, prompt tuning, retrieval augmented generation, synthetic data generation, parameter efficient fine tuning and full fine tuning. They range from lightweight methods that leave the model untouched to retraining with your own dataset.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/model-customization"
+        },
+        {
+          "question": "What is prompt tuning?",
+          "answer": "Prompt tuning is a lightweight way to adapt a model. It keeps the model's core architecture as is and refines how prompts are handled to improve accuracy for your task.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/model-customization"
+        },
+        {
+          "question": "What is parameter efficient fine tuning?",
+          "answer": "Parameter efficient fine tuning trains only a small set of parameters on a pretrained model. The original structure stays intact, which saves time and compute compared with retraining everything.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/model-customization"
+        },
+        {
+          "question": "How is full fine tuning different from that?",
+          "answer": "Full fine tuning starts from everything the base model already knows and then trains it further on a smaller dataset specific to your task. It tailors the model more deeply than parameter efficient methods.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/model-customization"
+        },
+        {
+          "question": "What is synthetic data generation used for?",
+          "answer": "It lets developers create task specific unstructured data when they need it. That data is then used to tune foundation models, which helps when you lack enough real examples.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/model-customization"
+        },
+        {
+          "question": "can I bring my own model?",
+          "answer": "Yes. Besides the IBM Granite and third party models in the library, you can bring your own custom foundation model onto the platform and use it in your AI applications.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/model-customization"
+        },
+        {
+          "question": "Why tune a small model instead of using a large general one?",
+          "answer": "IBM's view is that a smaller, task specific model can deliver good performance at lower cost than a large general purpose model. Customization is how you get the smaller model to that level for your use case.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/model-customization"
+        },
+        {
+          "question": "What is InstructLab?",
+          "answer": "InstructLab is described as a feature inside the Tuning Studio of watsonx.ai. It lets AI developers, data scientists and subject matter experts customize large and small language models for their domain.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/model-customization"
+        },
+        {
+          "question": "Does watsonx.ai support LoRA or QLoRA fine tuning?",
+          "answer": "Yes. LoRA and QLoRA fine tuning appear as platform features. It runs on dedicated GPUs and is offered on the Standard plan, not Essentials.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/pricing"
+        }
+      ]
+    },
+    {
+      "category": "DEPLOYMENT & DEVELOPER TOOLS",
+      "questions": [
+        {
+          "question": "How do I work with watsonx.ai programmatically?",
+          "answer": "IBM offers three developer interfaces for building generative AI applications in code: a REST API, a Python SDK and a Node.js SDK. The developer hub is the starting point for all three.",
+          "source_url": "https://dataplatform.cloud.ibm.com/docs/content/wsj/developer-hub/overview.html"
+        },
+        {
+          "question": "Where can developers find templates and guides?",
+          "answer": "The developer hub hosts a library of templates and guides for getting started. It is the recommended entry point for developers new to the platform.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai"
+        },
+        {
+          "question": "Can I deploy on premises or only in the cloud?",
+          "answer": "Both. You can deploy the models you choose on premises or in the cloud, and the platform is built to run across hybrid infrastructure.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/foundation-models"
+        },
+        {
+          "question": "Are the SaaS and self managed software versions identical?",
+          "answer": "Not guaranteed. IBM states that features and capabilities described on its pages refer to the SaaS version unless software pricing says otherwise. It makes no promise that SaaS and software editions match.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/foundation-models"
+        },
+        {
+          "question": "How do I make a model available to my applications?",
+          "answer": "You create and deploy AI services and model endpoints. They are exposed through consistent enterprise APIs, so application teams can reuse the same AI capability across workloads and agent experiences.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai"
+        },
+        {
+          "question": "What is Model Gateway?",
+          "answer": "Model Gateway gives you one uniform API for reaching many models, no matter where each one is hosted. It lets teams switch between models without rebuilding their integration.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/model-customization"
+        },
+        {
+          "question": "Is the Model Gateway API compatible with OpenAI's API?",
+          "answer": "Yes. IBM describes the gateway API as fully OpenAI compatible. Note that the gateway was listed as a public preview on the page.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/model-customization"
+        },
+        {
+          "question": "What hardware do deploy on demand models run on?",
+          "answer": "Dedicated hosting runs on NVIDIA GPUs. Configurations include L40S, A100, H100 and H200 cards in counts from one up to eight, and you choose the setup that fits the model.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/pricing"
+        },
+        {
+          "question": "can I run granite on my laptop?",
+          "answer": "Yes. Granite models are distributed through local tools such as Ollama and LM Studio, as well as Hugging Face. IBM also publishes a tutorial for building a local coding assistant with Granite Code, Ollama and Continue.",
+          "source_url": "https://www.ibm.com/granite"
+        },
+        {
+          "question": "Where else can I use Granite besides watsonx.ai?",
+          "answer": "Granite is available through Hugging Face, Ollama, LM Studio, OpenRouter, Replicate, Weights & Biases, Unsloth and AnythingLLM. It also powers IBM products such as watsonx Orchestrate and runs on Red Hat Enterprise Linux AI.",
+          "source_url": "https://www.ibm.com/granite"
+        }
+      ]
+    },
+    {
+      "category": "PLANS & PRICING",
+      "questions": [
+        {
+          "question": "What plans does watsonx.ai offer?",
+          "answer": "There are three tiers: a free trial plan for experimenting, Essentials for production deployments, and Standard for enterprise production. Essentials and Standard are both pay as you go. See current plan details at https://www.ibm.com/products/watsonx-ai/pricing",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/pricing"
+        },
+        {
+          "question": "is there a free tier?",
+          "answer": "Yes. The free plan works as a playground with capped monthly allowances for foundation model tokens, machine learning compute hours and text extraction documents. It is meant for trying the platform, not running production. See current allowances at https://www.ibm.com/products/watsonx-ai/pricing",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/pricing"
+        },
+        {
+          "question": "What is the Essentials plan for?",
+          "answer": "Essentials is the pay as you go plan aimed at production deployments. You pay for what you use, including model inference and feature usage such as machine learning and text extraction. See current plan details at https://www.ibm.com/products/watsonx-ai/pricing",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/pricing"
+        },
+        {
+          "question": "What is the Standard plan for?",
+          "answer": "Standard is the pay as you go plan for enterprise production. It carries a monthly starting charge and has lower usage rates than Essentials for some features. See current plan details at https://www.ibm.com/products/watsonx-ai/pricing",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/pricing"
+        },
+        {
+          "question": "can I fine tune or host my own model on Essentials?",
+          "answer": "No. LoRA fine tuning and deploy on demand model hosting are listed as not available on Essentials. Both are offered on Standard, billed hourly by GPU configuration. See current plan details at https://www.ibm.com/products/watsonx-ai/pricing",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/pricing"
+        },
+        {
+          "question": "How is foundation model inference billed?",
+          "answer": "Inference is metered in tokens. IBM uses a Resource Unit equal to 1,000 tokens that counts both input and output, and many models are priced per million tokens, some with separate input and output rates. See current model rates at https://www.ibm.com/products/watsonx-ai/pricing",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/pricing"
+        },
+        {
+          "question": "How are deploy on demand models billed?",
+          "answer": "Deploy on demand hosting is billed by the hour. The hourly rate depends on the GPU type and how many GPUs your configuration uses. See current rates at https://www.ibm.com/products/watsonx-ai/pricing",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/pricing"
+        },
+        {
+          "question": "How are machine learning and text extraction billed?",
+          "answer": "Machine learning is billed by Capacity Unit Hour, which depends on the environment and tools you use in a billing month. Text extraction is billed per page. Rates differ between Essentials and Standard. See current rates at https://www.ibm.com/products/watsonx-ai/pricing",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/pricing"
+        },
+        {
+          "question": "Are Mistral's commercial models priced differently?",
+          "answer": "Yes. Mistral commercial models carry two charges: a GPU hosting fee and a separate model access fee. IBM's documentation has the details. See current rates at https://www.ibm.com/products/watsonx-ai/pricing",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/pricing"
+        },
+        {
+          "question": "What support comes with each plan?",
+          "answer": "The free plan includes the watsonx community and an online chatbot. Essentials and Standard both include basic support with round the clock access to technical support through cases, and advanced support with SLAs is available as a paid option. See current support options at https://www.ibm.com/products/watsonx-ai/pricing",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/pricing"
+        },
+        {
+          "question": "Are the listed prices the same in every country?",
+          "answer": "No. IBM describes its listed prices as indicative. They can vary by country, exclude taxes and duties, and depend on whether an offering is available locally. See current pricing at https://www.ibm.com/products/watsonx-ai/pricing",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/pricing"
+        }
+      ]
+    },
+    {
+      "category": "GETTING STARTED & SUPPORT",
+      "questions": [
+        {
+          "question": "how do I try it?",
+          "answer": "Start a free trial from the watsonx.ai product page, which takes you to the IBM Cloud registration flow. The trial runs on the free plan, so you can explore before paying anything.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai"
+        },
+        {
+          "question": "Can I see a demo with someone from IBM first?",
+          "answer": "Yes. The product page has a form to book a live demo. It is a good option if you want a guided walkthrough before signing up.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai"
+        },
+        {
+          "question": "Is there a hands on demo for RAG?",
+          "answer": "Yes. The RAG page links to an interactive demo you can explore after logging in. It shows the document grounded chat experience in action.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/rag-development"
+        },
+        {
+          "question": "Where is the product documentation?",
+          "answer": "IBM keeps separate documentation for the SaaS version and for the self managed software version. Both are linked from the foundation models page. Use the one that matches how you run watsonx.ai.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/foundation-models"
+        },
+        {
+          "question": "where do I get help if I'm stuck?",
+          "answer": "IBM links a support and troubleshooting page in the watsonx documentation. You can also ask questions in the IBM Community. Paid plans add technical support through cases.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/foundation-models"
+        },
+        {
+          "question": "Is there a user community?",
+          "answer": "Yes. IBM runs a community space for watsonx.ai, linked from the product page. It is a place to ask questions and learn from other users.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai"
+        },
+        {
+          "question": "Are there tutorials or sample apps?",
+          "answer": "Yes. IBM Developer has a curated set of demos, sample applications and education for its AI products. The Granite cookbook on GitHub adds notebooks for tasks like summarization, RAG and agents.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai"
+        },
+        {
+          "question": "How do I choose the right model for my use case?",
+          "answer": "IBM publishes an ebook on choosing a foundation model, and a separate paper with its point of view on AI models. The library also lets you compare models by provider and consumption option.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/foundation-models"
+        },
+        {
+          "question": "can I try granite without setting anything up?",
+          "answer": "Yes. The Granite page links to a playground where you can try the models directly. You can also download them from Hugging Face if you prefer to run them yourself.",
+          "source_url": "https://www.ibm.com/granite"
+        },
+        {
+          "question": "Can my company become an IBM partner around watsonx.ai?",
+          "answer": "IBM links its Business Partner program from the watsonx.ai pricing page. Visit that program page to see requirements and how to apply.",
+          "source_url": "https://www.ibm.com/products/watsonx-ai/pricing"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+.venv
+venv/
+__pycache__/
+.ipynb_checkpoints
+chroma_db/
+.env
+.DS_Store
+demo-notes.md
+flagged/
+*.log
