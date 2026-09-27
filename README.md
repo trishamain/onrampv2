@@ -197,7 +197,7 @@ The system expects a JSON file with the following structure:
 - **Guaranteed return**: `process_message()` initialises `response` before the loop, so a turn with no AI message returns a readable message instead of raising
 - **Follow-up retrieval**: a follow-up question of eight words or fewer borrows the previous question as its retrieval query, so short questions still match something
 - **Example questions**: the Gradio interface adds a `gr.Examples` row of four click-to-fill questions
-- **Gradio 6**: `gr.Chatbot` is constructed without the `type` argument, which Gradio 6 removed; the messages format is now the default
+- **Gradio 6**: `gr.Chatbot` is constructed without the `type` argument, which Gradio 6 removed since the messages format is now the default, and the `css` argument is passed to `demo.launch()` rather than the `gr.Blocks()` constructor, which Gradio 6 moved
 
 ## ⚠️ Disclaimer
 
